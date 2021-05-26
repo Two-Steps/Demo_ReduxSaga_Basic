@@ -6,7 +6,7 @@ const delay = (ms) => new Promise(res => setTimeout(res, ms));
 
 export function* incrementAsync() {
     yield call(delay, 2000);
-    yield put({ type: 'INCREMENT' });
+    yield put({ type: 'INCREMENT', color: 'brown' });
 }
 
 export function* watchIncrementAsync() {
